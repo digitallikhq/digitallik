@@ -8,21 +8,21 @@ date: 2026-02-12
 ---
 
 ## What happened (sources)
-- **zkME Technology wins $20,000 PitchFest prize at Consensus Hong Kong**  
-  https://www.coindesk.com/business/2026/02/12/zkme-technology-wins-usd20-000-pitchfest-prize-at-consensus-hong-kong
+- **Crypto PAC Fairshake seeks to force resistant Texas Democrat Al Green from U.S. House**  
+  https://www.coindesk.com/policy/2026/02/12/crypto-pac-fairshake-seeks-to-force-resistant-texas-democrat-al-green-from-u-s-house
   _Note:_ 
-- **Bankers push OCC to slow crypto trust charters until GENIUS rules clarified**  
-  https://cointelegraph.com/news/bankers-push-occ-slow-crypto-trust-bank-charters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-  _Note:_ <p style="float: right; margin: 0 0 10px 15px; width: 240px;"><img alt="Bankers push OCC to slow crypto trust charters until GENIUS rules clarified" class="type:primaryImage" src="https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5j
-- **Binance completes $1B Bitcoin conversion for SAFU emergency fund**  
-  https://cointelegraph.com/news/binance-completes-1b-bitcoin-safu-conversion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-  _Note:_ <p style="float: right; margin: 0 0 10px 15px; width: 240px;"><img alt="Binance completes $1B Bitcoin conversion for SAFU emergency fund" class="type:primaryImage" src="https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWd
-- **ARK Invest adds $34M Robinhood stake as Bitcoin falls below $66K**  
-  https://cointelegraph.com/news/ark-buy-robinhood-34-million-bitcoin-slip-below-66k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-  _Note:_ <p style="float: right; margin: 0 0 10px 15px; width: 240px;"><img alt="ARK Invest adds $34M Robinhood stake as Bitcoin falls below $66K" class="type:primaryImage" src="https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWd
-- **Binance's Richard Teng breaks down the ‘10/10’ nightmare that rocked crypto**  
-  https://www.coindesk.com/business/2026/02/12/binance-not-alone-in-seeing-liquidations-during-oct-10-event-binance-ceo-teng-says
+- **Sharplink's Lubin and Chalom make their case for ether DATs as prices plunge**  
+  https://www.coindesk.com/business/2026/02/12/sharplink-s-lubin-and-chalom-make-their-case-for-ether-dats-as-prices-plunge
   _Note:_ 
+- **Ether’s hidden strength: Why institutional demand points to $2.4K**  
+  https://cointelegraph.com/news/ether-hidden-strength-why-institutional-demand-points-to-2-4k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+  _Note:_ <p style="float: right; margin: 0 0 10px 15px; width: 240px;"><img alt="Ether’s hidden strength: Why institutional demand points to $2.4K" class="type:primaryImage" src="https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZW
+- **Aave labs proposes ‘Aave Will Win’ plan to send 100% of product revenue to DAO**  
+  https://www.coindesk.com/business/2026/02/12/aave-labs-proposes-aave-will-win-plan-to-send-100-of-product-revenue-to-dao
+  _Note:_ 
+- **Ethereum Treasury Firm ETHZilla Pivots to Jet Engine Lease Tokenization as ETH Sinks**  
+  https://decrypt.co/357907/ethereum-treasury-ethzilla-pivots-jet-engine-leasing-eth-sinks
+  _Note:_ Publicly traded Ethereum treasury firm ETHZilla is tokenizing equity in jet engines that it is leasing to a major air carrier.
 
 ---
 
@@ -36,4 +36,4 @@ date: 2026-02-12
 ---
 
 ## X draft
-- @DigitallikHQ Daily brief: zkME Technology wins $20,000 PitchFest prize at Consensus Hong Kong | Also: Bankers push OCC to slow crypto trust charters until GENIUS rules clarified #Bitcoin #Crypto
+- @DigitallikHQ Daily brief: Crypto PAC Fairshake seeks to force resistant Texas Democrat Al Green from U.S. House | Also: Sharplink's Lubin and Chalom make their case for ether DATs as prices plunge #Bitcoin #Crypto
