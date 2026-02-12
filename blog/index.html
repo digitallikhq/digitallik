@@ -1,0 +1,13 @@
+---
+title: Blog
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+<p>Latest posts:</p>
+
+<ul>
+  {% for p in site.posts %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a> — {{ p.date | date: "%b %-d, %Y" }}</li>
+  {% endfor %}
+</ul>
