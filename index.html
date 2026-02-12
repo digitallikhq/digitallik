@@ -14,6 +14,7 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
     --a2:#06B6D4;
   }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{
     margin:0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
@@ -38,7 +39,7 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
     background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(6,182,212,.80));
     border:1px solid rgba(255,255,255,.12);
   }
-  .links{display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:.95rem}
+  .links{display:flex; gap:8px; flex-wrap:wrap; color:var(--muted); font-size:.95rem}
   .links a{padding:10px 12px; border-radius:12px}
   .links a:hover{background: rgba(255,255,255,.06); color:var(--text)}
   .btn{
@@ -53,7 +54,8 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
     border:1px solid rgba(124,58,237,.35);
     background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(6,182,212,.70));
   }
-  .hero{padding:64px 0 26px}
+
+  .hero{padding:64px 0 22px}
   .pill{
     display:inline-flex; align-items:center; gap:8px;
     padding:.35rem .75rem;
@@ -70,9 +72,20 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
     margin:14px 0 10px;
     letter-spacing:-.8px;
   }
-  .sub{color:var(--muted); line-height:1.65; max-width:72ch; margin:0 0 14px}
+  .sub{color:var(--muted); line-height:1.65; max-width:78ch; margin:0 0 14px}
   .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+
   .section{padding:26px 0}
+  .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:12px}
+  .section h2{margin:0; font-size:1.35rem}
+  .section p.lead{margin:0; color:var(--muted); line-height:1.6}
+  .panel{
+    border:1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.04);
+    border-radius:18px;
+    padding:16px;
+  }
+
   .grid{display:grid; grid-template-columns: repeat(3,1fr); gap:14px}
   .card{
     border:1px solid rgba(255,255,255,.10);
@@ -83,6 +96,28 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
   .kicker{color:rgba(255,255,255,.52); font-size:.85rem; margin-bottom:8px}
   .card h3{margin:0 0 6px}
   .card p{margin:0; color:var(--muted); line-height:1.55}
+  .divider{height:1px;background:rgba(255,255,255,.08); margin:16px 0}
+
+  .list{display:grid; gap:10px}
+  .item{
+    display:flex; gap:12px; align-items:flex-start; justify-content:space-between;
+    border:1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.03);
+    border-radius:16px;
+    padding:14px;
+  }
+  .item strong{display:block; margin-bottom:4px}
+  .item small{color:var(--muted); line-height:1.5}
+  .tag{
+    padding:.25rem .55rem; border-radius:999px;
+    border:1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    color:rgba(255,255,255,.70);
+    font-size:.78rem;
+    white-space:nowrap;
+    margin-left:10px;
+  }
+
   .footer{
     margin-top:30px;
     padding:26px 0 34px;
@@ -95,40 +130,45 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
   .foot a:hover{color:var(--text)}
   @media (max-width: 920px){
     .grid{grid-template-columns: 1fr}
+    .item{flex-direction:column}
+    .tag{margin-left:0}
   }
 </style>
 
 <header class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="{{ site.baseurl }}/">
+    <a class="brand" href="#top">
       <span class="mark" aria-hidden="true"></span>
       <span>Digitallik</span>
     </a>
 
     <nav class="links">
-      <a href="{{ site.baseurl }}/#about">About</a>
-      <a href="{{ site.baseurl }}/blog/">Blog</a>
-      <a href="{{ site.baseurl }}/products/">Crypto Products</a>
-      <a href="{{ site.baseurl }}/dgtk/">DGTK</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#products">Crypto Products</a>
+      <a href="#dgtk">DGTK</a>
+      <a href="#contact">Links</a>
     </nav>
 
     <a class="btn primary" href="https://x.com/DigitallikHQ" target="_blank" rel="noopener">Follow @DigitallikHQ</a>
   </div>
 </header>
 
+<div id="top"></div>
+
 <section class="hero">
   <div class="container">
     <div class="pill"><span class="dot"></span> Clean signal &gt; noise</div>
     <h1>Crypto clarity. Products. DGTK.</h1>
     <p class="sub">
-      Digitallik is a clean, modern hub for posts that are easy to read, crypto product recommendations that are organized,
-      and an official DGTK page with the essentials in one place.
+      Digitallik is a clean, modern hub for easy-to-read crypto posts, organized crypto product picks,
+      and an official DGTK section with the essentials in one place.
     </p>
 
     <div class="actions">
-      <a class="btn primary" href="{{ site.baseurl }}/blog/">Read Blog</a>
-      <a class="btn" href="{{ site.baseurl }}/products/">Browse Products</a>
-      <a class="btn" href="{{ site.baseurl }}/dgtk/">Open DGTK Hub</a>
+      <a class="btn primary" href="#blog">Read Blog</a>
+      <a class="btn" href="#products">Browse Products</a>
+      <a class="btn" href="#dgtk">Open DGTK</a>
     </div>
   </div>
 </section>
@@ -136,23 +176,168 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
 <section id="about" class="section">
   <div class="container">
     <div class="grid">
-      <a class="card" href="{{ site.baseurl }}/blog/">
+      <a class="card" href="#blog">
         <div class="kicker">Blog</div>
         <h3>Clean posts</h3>
         <p>Short sections, real takeaways, and no filler.</p>
       </a>
 
-      <a class="card" href="{{ site.baseurl }}/products/">
+      <a class="card" href="#products">
         <div class="kicker">Crypto Products</div>
         <h3>Curated tools</h3>
         <p>Wallets, books, tracking tools, and gear — organized for speed.</p>
       </a>
 
-      <a class="card" href="{{ site.baseurl }}/dgtk/">
+      <a class="card" href="#dgtk">
         <div class="kicker">DGTK</div>
         <h3>Official hub</h3>
-        <p>Contract, chart link, and a clean token page.</p>
+        <p>Token essentials in one clean place.</p>
       </a>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Blog</h2>
+        <p class="lead">Add posts here as simple “cards.” Later, we can auto-generate from Markdown files.</p>
+      </div>
+      <a class="btn" href="#top">Back to top</a>
+    </div>
+
+    <div class="panel">
+      <div class="list">
+        <!-- BLOG ITEM TEMPLATE (copy/paste to add more) -->
+        <div class="item">
+          <div>
+            <strong>Post Title #1</strong>
+            <small>2–3 sentences summary of the post. Keep it clean and punchy.</small>
+          </div>
+          <span class="tag">Blog</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Post Title #2</strong>
+            <small>Short summary. You can also link out to a Google Doc, Substack, or full post page later.</small>
+          </div>
+          <span class="tag">Blog</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Crypto Products</h2>
+        <p class="lead">Keep this as a curated list. Each item can link to an affiliate page later.</p>
+      </div>
+      <a class="btn" href="#top">Back to top</a>
+    </div>
+
+    <div class="panel">
+      <div class="list">
+        <div class="item">
+          <div>
+            <strong>Hardware Wallets</strong>
+            <small>Top picks for secure self-custody (add your affiliate links later).</small>
+          </div>
+          <span class="tag">Products</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Portfolio / Tax Tools</strong>
+            <small>Tracking, reporting, and tax helpers (CoinLedger, etc.).</small>
+          </div>
+          <span class="tag">Products</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Books + Learning</strong>
+            <small>Fast learning list for beginners and advanced readers.</small>
+          </div>
+          <span class="tag">Products</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dgtk" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>DGTK</h2>
+        <p class="lead">Official essentials: what it is, contract, and key links.</p>
+      </div>
+      <a class="btn" href="#top">Back to top</a>
+    </div>
+
+    <div class="panel">
+      <div class="list">
+        <div class="item">
+          <div>
+            <strong>What is DGTK?</strong>
+            <small>Digitallik Token (DGTK) is the utility backbone of Digitallik.com and grows with the platform’s ecosystem.</small>
+          </div>
+          <span class="tag">DGTK</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Contract Address</strong>
+            <small style="word-break:break-all;">0xE37bCca78d9F59928c132C3F3da10Cad3EE44B07</small>
+          </div>
+          <span class="tag">Official</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Chart / Swap Links</strong>
+            <small>Add your preferred chart link(s) here (DexScreener / GeckoTerminal / etc.).</small>
+          </div>
+          <span class="tag">Links</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Links</h2>
+        <p class="lead">Keep it minimal: X + Telegram.</p>
+      </div>
+      <a class="btn" href="#top">Back to top</a>
+    </div>
+
+    <div class="panel">
+      <div class="list">
+        <div class="item">
+          <div>
+            <strong>X (Twitter)</strong>
+            <small>@DigitallikHQ</small>
+          </div>
+          <a class="btn primary" href="https://x.com/DigitallikHQ" target="_blank" rel="noopener">Open</a>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Telegram</strong>
+            <small>@digitallik</small>
+          </div>
+          <a class="btn" href="https://t.me/digitallik" target="_blank" rel="noopener">Open</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -161,10 +346,10 @@ description: Crypto blog, crypto products, and the DGTK ecosystem.
   <div class="container foot">
     <div>© <span id="y"></span> Digitallik</div>
     <div style="display:flex;gap:14px;flex-wrap:wrap">
-      <a href="{{ site.baseurl }}/blog/">Blog</a>
-      <a href="{{ site.baseurl }}/products/">Products</a>
-      <a href="{{ site.baseurl }}/dgtk/">DGTK</a>
-      <a href="https://x.com/DigitallikHQ" target="_blank" rel="noopener">X</a>
+      <a href="#blog">Blog</a>
+      <a href="#products">Products</a>
+      <a href="#dgtk">DGTK</a>
+      <a href="#top">Top</a>
     </div>
   </div>
 </footer>
