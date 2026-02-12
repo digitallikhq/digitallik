@@ -4,10 +4,15 @@ permalink: /products/
 ---
 
 <h1>Crypto Products</h1>
+
 <ul>
   {% for pr in site.products %}
-    <li><a href="{{ pr.url }}">{{ pr.name | default: pr.title }}</a> — {{ pr.category }}</li>
+    <li>
+      <a href="{{ site.baseurl }}{{ pr.url }}">{{ pr.name | default: pr.title }}</a>
+      {% if pr.category %} — {{ pr.category }}{% endif %}
+    </li>
   {% endfor %}
 </ul>
 
-<p>Disclosure: Some links may be affiliate links.</p>
+<p><b>Disclosure:</b> Some links may be affiliate links.</p>
+<p><a href="{{ site.baseurl }}/">Back home</a></p>
