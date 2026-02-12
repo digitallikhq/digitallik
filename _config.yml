@@ -1,7 +1,8 @@
 title: Digitallik
 description: Crypto blog, crypto products, and the DGTK ecosystem.
-url: ""
-baseurl: ""
+
+url: "https://digitallikhq.github.io"
+baseurl: "/digitallik"
 
 permalink: /blog/:year/:month/:day/:title/
 
@@ -11,22 +12,6 @@ collections:
   products:
     output: true
     permalink: /products/:name/
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: product
 
 x_handle: "DigitallikHQ"
 x_url: "https://x.com/DigitallikHQ"
